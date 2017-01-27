@@ -1,3 +1,24 @@
 <h1>
   {{title}}
 </h1>
+<table>
+  <thead>
+    <th>Nom</th>
+    <th *ngFor="let matiere of matieres">{{matiere}}</th>
+    <th>Moyenne</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let eleve of listeEleves">
+      <td>{{eleve.nom}}</td>
+      <td *ngFor="let matiere of matieres">
+        <input [(ngModel)]="eleve.notes[matiere]" (ngModelChange)="eleve.calculMoyenne()">
+      </td>
+      <td>{{eleve.moyenne}}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td *ngFor="let matiere of matieres"></td>
+      <td>{{moyenneGlobale}}</td>
+    </tr>
+  </tbody>
+</table>
