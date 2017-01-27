@@ -1,19 +1,22 @@
 <table>
   <thead>
-    <th>Nom</th>
-    <th>Description</th>
-    <th>Screenshot</th>
+<tr>
+  <th>name</th>
+  <th>summary</th>
+  <th>genres</th>
+  <th>screenshots</th>
+  <th>cover</th>
+  <th>video</th>
+</tr>
   </thead>
   <tbody>
-    <tr>
-      <td>{{jeux.name}}</td>
-      <td>{{jeux.summary}}</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tr *ngFor="let jeu of jeux">
+      <td>{{jeu['name']}}</td>
+      <td>{{jeu['summary']}}</td>
+      <td>{{jeu['genres']}}</td>
+      <td>{{jeu['screenshots']}}</td>
+      <td><img src="{{jeu['cover']['url']}}" alt=""></td>
+      <td>{{jeu['videos']}}</td>
     </tr>
   </tbody>
 </table>

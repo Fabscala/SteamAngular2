@@ -8,17 +8,10 @@ import { TestService } from '../test.service';
   styleUrls: ['./tableau.component.css']
 })
 export class TableauComponent {
-	
-	jeux;
 
-  constructor(public testService: TestService) { 
-
+  constructor(private testService: TestService) { 
+  	
   }
-
-
-
-  ngOnInit() {
-  	this.jeux = getJeux;
-  }
+  jeux = this.testService.getJeux;
 
 }
