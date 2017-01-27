@@ -18,7 +18,7 @@ import { TableauComponent } from './tableau/tableau.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
