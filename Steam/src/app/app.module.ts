@@ -28,7 +28,7 @@ import { TopJeuxComponent } from './top-jeux/top-jeux.component';
     HttpModule,
     RouterModule.forRoot([
       {
-        path: 'library',
+        path: 'biblioteque',
         component: BibliothequeComponent,
       }
     ])
