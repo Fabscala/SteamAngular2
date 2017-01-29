@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { TestService } from './test.service';
 
@@ -24,7 +25,14 @@ import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'library',
+        component: BibliothequeComponent,
+      }
+    ])
+
   ],
   providers: [TestService],
   bootstrap: [AppComponent]
