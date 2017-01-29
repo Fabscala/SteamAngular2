@@ -21,8 +21,8 @@ import { TopJeuxComponent } from './top-jeux/top-jeux.component';
     HeaderComponent,
     FooterComponent,
     BibliothequeComponent,
-    InfosComponent
-    TopJeuxComponent
+    InfosComponent,
+    TopJeuxComponent,
   ],
   imports: [
     BrowserModule,
