@@ -1,0 +1,15 @@
+<p>Recherche</p>
+<input type="text" [(ngModel)]="bla">
+
+<table>
+
+  <tbody>
+    <tr *ngFor="let jeu of jeux; let iteration = index">
+      <td *ngIf="jeu['name'].includes(bla)">{{jeu['name']}}</td>
+      <td *ngIf="jeu['name'].includes(bla)"><img src="{{jeu['cover']['url']}}" alt=""></td>
+      <td *ngIf="jeu['name'].includes(bla)">
+          <a href="infos/{{iteration}}">Infos</a>
+      </td>      
+    </tr>
+  </tbody>
+</table>

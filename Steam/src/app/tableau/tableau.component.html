@@ -1,19 +1,7 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <input type="text" ngModel="bla">
-    </div>
-  </div>
-</div>
+
 
 <table>
-  <thead>
-<tr>
-  <th>Nom</th>
-  <th>Illustration</th>
-  <th>En savoir plus</th>
-</tr>
-  </thead>
+
   <tbody>
     <tr *ngFor="let jeu of jeux; let iteration = index">
       <td>{{jeu['name']}}</td>

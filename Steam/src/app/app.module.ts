@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
 import { InfosComponent } from './infos/infos.component';
 import { TopJeuxComponent } from './top-jeux/top-jeux.component';
+import { RechercheComponent } from './recherche/recherche.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TopJeuxComponent } from './top-jeux/top-jeux.component';
     BibliothequeComponent,
     InfosComponent,
     TopJeuxComponent,
+    RechercheComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,10 @@ import { TopJeuxComponent } from './top-jeux/top-jeux.component';
       {
         path: 'infos/:id',
         component: InfosComponent,
+      },
+      {
+        path: 'recherche',
+        component: RechercheComponent,
       }
     ])
 
