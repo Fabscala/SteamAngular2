@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { TableauComponent } from './tableau/tableau.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { IndexComponent } from './index/index.component';
 import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
     TableauComponent,
     HeaderComponent,
     FooterComponent,
-    IndexComponent,
     BibliothequeComponent
   ],
   imports: [
