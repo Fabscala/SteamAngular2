@@ -26,7 +26,7 @@ import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
     HttpModule,
     RouterModule.forRoot([
       {
-        path: 'library',
+        path: 'biblioteque',
         component: BibliothequeComponent,
       }
     ])

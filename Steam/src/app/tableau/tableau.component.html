@@ -2,15 +2,15 @@
   <thead>
 <tr>
   <th>Nom</th>
-  <th>Description</th>
   <th>Illustration</th>
+  <th>En savoir plus</th>
 </tr>
   </thead>
   <tbody>
     <tr *ngFor="let jeu of jeux">
       <td>{{jeu['name']}}</td>
-      <td>{{jeu['summary']}}</td>
       <td><img src="{{jeu['cover']['url']}}" alt=""></td>
+      <td><button href="">+</button></td>      
     </tr>
   </tbody>
 </table>
