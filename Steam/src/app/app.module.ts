@@ -11,6 +11,7 @@ import { TableauComponent } from './tableau/tableau.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
+import { TopJeuxComponent } from './top-jeux/top-jeux.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
     TableauComponent,
     HeaderComponent,
     FooterComponent,
-    BibliothequeComponent
+    BibliothequeComponent,
+    TopJeuxComponent
   ],
   imports: [
     BrowserModule,
