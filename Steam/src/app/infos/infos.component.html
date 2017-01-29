@@ -1,0 +1,32 @@
+<p>
+	infos works !
+</p>
+
+<table>
+  <thead>
+<tr>
+  <th>Nom</th>
+  <th>Summary</th>
+</tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{jeux.name}}</td>
+      <td>{{jeux.summary}}</td>
+    </tr>
+    </tbody><br><br><br>
+    <thead>
+    <tr>
+    	<th>Screen</th>
+		  <th>Cover</th>
+		  <th>Genre</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    	<td><img src="{{jeux.screenshots[1].url}}" alt=""></td>
+      <td><img src="{{jeux.cover.url}}" alt=""></td>
+      <td *ngFor="let genre of jeux.genres">{{genre.name}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { TestService } from '../test.service';
 
 @Component({
@@ -7,11 +6,17 @@ import { TestService } from '../test.service';
   templateUrl: './tableau.component.html',
   styleUrls: ['./tableau.component.css']
 })
-export class TableauComponent {
+export class TableauComponent implements OnInit {
+
+	jeux;
 
   constructor(private testService: TestService) { 
   	
   }
-  jeux = this.testService.getJeux;
+  
+
+  ngOnInit() {
+  	this.jeux = this.testService.getJeux;
+  }
 
 }

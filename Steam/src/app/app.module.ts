@@ -11,6 +11,7 @@ import { TableauComponent } from './tableau/tableau.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
+import { InfosComponent } from './infos/infos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
     TableauComponent,
     HeaderComponent,
     FooterComponent,
-    BibliothequeComponent
+    BibliothequeComponent,
+    InfosComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,10 @@ import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
       {
         path: 'biblioteque',
         component: BibliothequeComponent,
+      },
+      {
+        path: 'infos/:id',
+        component: InfosComponent,
       }
     ])
 
