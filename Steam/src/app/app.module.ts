@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BibliothequeComponent } from './bibliotheque/bibliotheque.component';
 import { InfosComponent } from './infos/infos.component';
+import { TopJeuxComponent } from './top-jeux/top-jeux.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { InfosComponent } from './infos/infos.component';
     FooterComponent,
     BibliothequeComponent,
     InfosComponent
+    TopJeuxComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<h1 style="text-align: center;"> Top 3 des jeux du moment ! </h1>
+
+<div *ngFor="let jeu of jeux" class="col-md-4 jeux">
+
+  <h3>
+    {{jeu['name']}}
+  </h3>
+
+  <img src="{{jeu['cover']['url']}}" class="img-center" width="125" height="125">
+
+<hr>
+</div>
+
+<hr>

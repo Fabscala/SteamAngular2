@@ -311,7 +311,10 @@ export class TestService {
 
 //   constructor(private http: Http) {
 // }
-
+getTopGames()
+{
+  return this.getJeux.slice(1,4);
+}
 
 
 constructor(){
@@ -321,3 +324,5 @@ constructor(){
 
 
 }
+
+
