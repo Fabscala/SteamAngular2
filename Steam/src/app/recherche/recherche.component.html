@@ -4,7 +4,7 @@
 <table>
 
   <tbody>
-    <tr *ngFor="let jeu of jeux; let iteration = index">
+    <tr *ngFor="let jeu of jeux; let iteration = index" class="col-md-6">
       <td *ngIf="jeu['name'].includes(bla)">{{jeu['name']}}</td>
       <td *ngIf="jeu['name'].includes(bla)"><img src="{{jeu['cover']['url']}}" alt=""></td>
       <td *ngIf="jeu['name'].includes(bla)">
