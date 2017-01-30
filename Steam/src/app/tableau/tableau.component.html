@@ -3,12 +3,16 @@
 <table>
 
   <tbody>
+
     <tr *ngFor="let jeu of jeux; let iteration = index">
+      <div class="col-md-4">
       <td>{{jeu['name']}}</td>
       <td><img src="{{jeu['cover']['url']}}" alt=""></td>
       <td>
           <a href="infos/{{iteration}}">Infos</a>
-      </td>      
+      </td>    
+      </div>  
     </tr>
+
   </tbody>
 </table>
