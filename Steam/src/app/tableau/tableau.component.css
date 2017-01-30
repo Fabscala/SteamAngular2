@@ -4,7 +4,7 @@ input {
 }
 
 td{
-	padding: 50px;
+	padding: 40px;
 }
 
 a{
@@ -17,4 +17,9 @@ a:hover{
 	color: white;
 	text-decoration: none;
 	background-color: #95a5a6;
+}
+
+img{
+	max-width: 60%;
+	max-height: 120px;
 }
